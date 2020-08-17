@@ -3,73 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Gauges</title>
+    <title>Moodtracker</title>
+    <link rel="stylesheet" href="semantic.min.css">
     <style>
         .slider {
             height: 50px;
         }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
-    
-    <div class="slider">
-        <label for="points">Happiness:</label>
-        <input type="range" id="happiness" min="0" max="100">
+    <div class="ui three item menu">
+        <a class="active item" href="/">Sliders</a>
+        <a class="item" href="/stats">Stats</a>
+        <a class="item" href="/settings">Settings</a>
     </div>
+    <div class="ui container">
+        <div class="slider">
+            <label for="points">Happiness:</label>
+            <input type="range" id="happiness" min="0" max="100">
+        </div>
 
-    <div class="slider">
-        <label for="points">Sadness:</label>
-        <input type="range" id="sadness" min="0" max="100">
-    </div>
+        <div class="slider">
+            <label for="points">Sadness:</label>
+            <input type="range" id="sadness" min="0" max="100">
+        </div>
 
-    <div class="slider">
-        <label for="points">Hunger:</label>
-        <input type="range" id="hunger" min="0" max="100">
-    </div>
+        <div class="slider">
+            <label for="points">Hunger:</label>
+            <input type="range" id="hunger" min="0" max="100">
+        </div>
 
-    <div class="slider">
-        <label for="points">Energy:</label>
-        <input type="range" id="energy" min="0" max="100">
-    </div>
-    
-    <div class="slider">
-        <label for="points">Stress:</label>
-        <input type="range" id="stress" min="0" max="100">
-    </div>
+        <div class="slider">
+            <label for="points">Energy:</label>
+            <input type="range" id="energy" min="0" max="100">
+        </div>
 
-    <div class="slider">
-        <label for="points">Alcohol:</label>
-        <input type="range" id="alcohol" min="0" max="100">
-    </div class="slider">
+        <div class="slider">
+            <label for="points">Stress:</label>
+            <input type="range" id="stress" min="0" max="100">
+        </div>
 
-    <div class="slider">
-        <label for="points">Meditation:</label>
-        <input type="number" id="meditation">
-    </div>
+        <div class="slider">
+            <label for="points">Alcohol:</label>
+            <input type="range" id="alcohol" min="0" max="100">
+        </div class="slider">
 
-    <div class="slider">
-        <label for="points">Self-Image:</label>
-        <input type="range" id="self-image" min="0" max="100">
-    </div class="slider">
+        <div class="slider">
+            <label for="points">Meditation:</label>
+            <input type="number" id="meditation">
+        </div>
 
-    <div class="slider">
-        <label for="points">Computer Time:</label>
-        <input type="number" id="computer-time">
-    </div>
+        <div class="slider">
+            <label for="points">Self-Image:</label>
+            <input type="range" id="self-image" min="0" max="100">
+        </div class="slider">
 
-    <div class="slider">
-        <label for="points">Exercise:</label>
-        <input type="range" id="exercise" min="0" max="100">
-    </div>
+        <div class="slider">
+            <label for="points">Computer Time:</label>
+            <input type="number" id="computer-time">
+        </div>
 
-    <div class="slider">
-        <label for="points">Talking:</label>
-        <input type="range" id="talking" min="0" max="100">
-    </div>
+        <div class="slider">
+            <label for="points">Exercise:</label>
+            <input type="range" id="exercise" min="0" max="100">
+        </div>
 
-    <div class="slider">
-        <label for="points">Project Completion:</label>
-        <input type="range" id="project-completion" min="0" max="100">
+        <div class="slider">
+            <label for="points">Talking:</label>
+            <input type="range" id="talking" min="0" max="100">
+        </div>
+
+        <div class="slider">
+            <label for="points">Project Completion:</label>
+            <input type="range" id="project-completion" min="0" max="100">
+        </div>
     </div>
 
     <script src="jquery.min.js"></script>
